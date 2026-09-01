@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MLA-TAFC</title>
+  <link rel="icon" type="image/x-icon" href="static/images/Tsinghua_University_Logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']],
+        tags: 'ams'
+      },
+      output: {
+        fontPath: 'static/mathjax/fonts/%%FONT%%-font',
+        displayOverflow: 'scroll'
+      }
+    };
+  </script>
+  <script defer src="static/mathjax/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --mla-accent: #315aa6;
+      --mla-accent-soft: #eef3fb;
+      --mla-border: #dbe3ef;
+      --mla-text-soft: #596579;
+    }
+
+    .project-section {
+      padding: 3.5rem 1.5rem;
+    }
+
+    .framework-figure {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .framework-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .experiment-intro {
+      max-width: 860px;
+      margin: 0.75rem auto 0;
+      color: var(--mla-text-soft);
+      text-align: center;
+    }
+
+    .task-category {
+      padding: 3.25rem 1.5rem;
+    }
+
+    .task-category:nth-of-type(even) {
+      background: #f7f9fc;
+    }
+
+    .task-heading {
+      margin-bottom: 1.75rem !important;
+      text-align: center;
+    }
+
+    .experiment-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 900px);
+      gap: 1.5rem;
+      align-items: start;
+      justify-content: center;
+    }
+
+    .experiment-grid.is-single {
+      grid-template-columns: minmax(0, 900px);
+      justify-content: center;
+    }
+
+    .experiment-card {
+      overflow: hidden;
+      border: 1px solid var(--mla-border);
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(40, 57, 83, 0.08);
+    }
+
+    .experiment-card video {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #111;
+    }
+
+    .experiment-copy {
+      padding: 1.25rem 1.35rem 1.4rem;
+    }
+
+    .experiment-copy .title {
+      margin-bottom: 0.85rem;
+    }
+
+    .task-input {
+      margin-top: 0.75rem;
+      padding: 0.85rem 1rem;
+      border-left: 4px solid var(--mla-accent);
+      border-radius: 5px;
+      background: var(--mla-accent-soft);
+      line-height: 1.55;
+    }
+
+    .task-input-label {
+      display: block;
+      margin-bottom: 0.2rem;
+      color: #263957;
+      font-weight: 700;
+    }
+
+    .task-input-sequence {
+      margin: 0.35rem 0 0 1.2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .project-section,
+      .task-category {
+        padding: 2.5rem 1rem;
+      }
+
+      .experiment-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Demonstration for MLA-TAFC</h1>
+              <h2 class="subtitle has-text-centered"> <!-- Adjusted font size and alignment -->
+                MLA-TAFC: a Multimodal LLM-Augmented framework for Task-Adaptive Formation Control of Connected and Automated Vehicles (CAVs).
+              </h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=ncDpC9gAAAAJ&hl=en" target="_blank">Jianghong Dong</a><sup>a</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://wjiawei.com/" target="_blank">Jiawei Wang</a><sup>b</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=o9zHCC0AAAAJ&hl=zh-CN&inst=3212728378801010220&oi=ao" target="_blank">Yifeng Zhang</a><sup>c</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=MlK35S4AAAAJ&hl=en" target="_blank">Mengchi Cai</a><sup>a</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=T6MoOScAAAAJ&hl=en" target="_blank">Chaoyi Chen</a><sup>a</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=7XuJsS8AAAAJ&hl=en" target="_blank">Qing Xu</a><sup>a</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.researchgate.net/profile/Jianqiang-Wang" target="_blank">Jianqiang Wang</a><sup>a</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=x58fnLQAAAAJ&hl=en" target="_blank">Keqiang Li</a><sup>a</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.marmotlab.org/bio.html" target="_blank">Guillaume Sartoretti</a><sup>c</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>a</sup>Tsinghua University,</span>
+              <span class="author-block"><sup>b</sup>University of Michigan,</span>
+              <span class="author-block"><sup>c</sup>National University of Singapore</span>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Real-world experiments -->
+<section class="task-category" id="spacing-adjustment">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 task-heading">1. Longitudinal Spacing Adjustment</h2>
+    <div class="experiment-grid">
+      <article class="experiment-card">
+        <video controls playsinline preload="metadata">
+          <source src="static/videos/1-1-decrease-distance.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="experiment-copy">
+          <h3 class="title is-4">1.1 Decreasing Longitudinal Spacing</h3>
+          <div class="task-input">
+            <span class="task-input-label">User Task Input</span>
+            “Decrease the longitudinal spacing.”
+          </div>
+        </div>
+      </article>
+
+      <article class="experiment-card">
+        <video controls playsinline preload="metadata">
+          <source src="static/videos/1-2-increase-distance.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="experiment-copy">
+          <h3 class="title is-4">1.2 Increasing Longitudinal Spacing</h3>
+          <div class="task-input">
+            <span class="task-input-label">User Task Input</span>
+            “Increase the longitudinal spacing.”
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="task-category" id="high-priority-vehicle-yielding">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 task-heading">2. Yielding to High-Priority Vehicles</h2>
+    <div class="experiment-grid">
+      <article class="experiment-card">
+        <video controls playsinline preload="metadata">
+          <source src="static/videos/2-1-avoid-transition.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="experiment-copy">
+          <h3 class="title is-4">2.1 Yielding via Formation Transition</h3>
+          <div class="task-input">
+            <span class="task-input-label">User Task Input</span>
+            “Watch out for the ambulance!”
+          </div>
+        </div>
+      </article>
+
+      <article class="experiment-card">
+        <video controls playsinline preload="metadata">
+          <source src="static/videos/2-2-avoid-translation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="experiment-copy">
+          <h3 class="title is-4">2.2 Yielding via Formation Translation</h3>
+          <div class="task-input">
+            <span class="task-input-label">User Task Input</span>
+            “Watch out for the ambulance!”
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="task-category" id="obstacle-avoidance">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 task-heading">3. Obstacle Avoidance</h2>
+    <div class="experiment-grid is-single">
+      <article class="experiment-card">
+        <video controls playsinline preload="metadata">
+          <source src="static/videos/3-1-avoid-obstacle.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="experiment-copy">
+          <div class="task-input">
+            <span class="task-input-label">User Task Input</span>
+            “Watch out for the obstacle!”
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="task-category" id="formation-structure-switching">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 task-heading">4. Formation Structure Switching</h2>
+    <div class="experiment-grid is-single">
+      <article class="experiment-card">
+        <video controls playsinline preload="metadata">
+          <source src="static/videos/4-1-structure-change.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="experiment-copy">
+          <div class="task-input">
+            <span class="task-input-label">User Task Inputs</span>
+            <ol class="task-input-sequence">
+              <li>“Change the interlaced formation to a parallel formation.”</li>
+              <li>“Move the single vehicle to the rear instead of the front.”</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="task-category" id="formation-shape-transformation">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 task-heading">5. Formation Shape Transformation</h2>
+    <div class="experiment-grid is-single">
+      <article class="experiment-card">
+        <video controls playsinline preload="metadata">
+          <source src="static/videos/5-1-shape-change.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="experiment-copy">
+          <div class="task-input">
+            <span class="task-input-label">User Task Inputs</span>
+            <ol class="task-input-sequence">
+              <li>“Change the formation shape to a circle with the following distance as its radius.”</li>
+              <li>“Keep the two middle vehicles of the original formation fixed instead of the two outer vehicles.”</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- End real-world experiments -->
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light project-section" id="abstract">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Formation control of autonomous vehicles has shown great potential to improve traffic efficiency and safety. However, most existing work focuses on formation maintenance under predefined tasks and cannot adapt to dynamically changing task requirements in real-world traffic, which significantly limits its flexibility and practical applicability. To address this issue, we propose MLA-TAFC, a multimodal large language model (MLLM)-augmented framework for task-adaptive formation control of connected and automated vehicles. Its task-adaptive formation generator interprets unstructured multimodal task requirements, grounds MLLM reasoning with real-time tools and a knowledge database, and generates corresponding desired formations. An optimization-based formation tracking controller then computes conflict-free CAV-to-target assignments and physically executes the generated formations through joint spatio-temporal trajectory planning and tracking. A reflection module evaluates actual execution outcomes and updates the experience memory, establishing a closed loop for iterative refinement. Real-world experiments demonstrate the effectiveness and practical applicability of MLA-TAFC across diverse dynamic formation tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Framework -->
+<section class="hero is-small project-section" id="framework">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">MLA-TAFC Framework</h2>
+      <div class="framework-figure">
+        <img src="static/images/MLA-TAFC-framework.png" alt="Overview of the MLA-TAFC framework" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End framework -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p class="columns is-centered">
+            This page was built using the&nbsp;<a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>&nbsp;and was also inspired by&nbsp;<a href="https://robotics-star.com/C2-Explorer/" target="_blank" rel="noopener noreferrer">this website</a>.
+          </p>
+          <p class="columns is-centered" >&copy;2026 Jianghong Dong</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
