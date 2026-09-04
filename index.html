@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>GRM-TAFC</title>
+  <title>GRF-TAFC</title>
   <link rel="icon" type="image/x-icon" href="static/images/Tsinghua_University_Logo.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -60,10 +60,10 @@
 
   <style>
     :root {
-      --grm-accent: #315aa6;
-      --grm-accent-soft: #eef3fb;
-      --grm-border: #dbe3ef;
-      --grm-text-soft: #596579;
+      --grf-accent: #315aa6;
+      --grf-accent-soft: #eef3fb;
+      --grf-border: #dbe3ef;
+      --grf-text-soft: #596579;
     }
 
     .project-section {
@@ -84,7 +84,7 @@
     .experiment-intro {
       max-width: 860px;
       margin: 0.75rem auto 0;
-      color: var(--grm-text-soft);
+      color: var(--grf-text-soft);
       text-align: center;
     }
 
@@ -116,7 +116,7 @@
 
     .experiment-card {
       overflow: hidden;
-      border: 1px solid var(--grm-border);
+      border: 1px solid var(--grf-border);
       border-radius: 12px;
       background: #fff;
       box-shadow: 0 8px 24px rgba(40, 57, 83, 0.08);
@@ -140,9 +140,9 @@
     .task-input {
       margin-top: 0.75rem;
       padding: 0.85rem 1rem;
-      border-left: 4px solid var(--grm-accent);
+      border-left: 4px solid var(--grf-accent);
       border-radius: 5px;
-      background: var(--grm-accent-soft);
+      background: var(--grf-accent-soft);
       line-height: 1.55;
     }
 
@@ -177,9 +177,10 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Demonstration for GRM-TAFC</h1>
+            <h1 class="title is-1 publication-title">Demonstration for GRF-TAFC</h1>
               <h2 class="subtitle has-text-centered"> <!-- Adjusted font size and alignment -->
-                GRM-TAFC: a Grounded and Reflective MLLM-augmented framework for Task-Adaptive Formation Choreography of Connected and Automated Vehicles (CAVs).
+                GRF-TAFC: a Grounded and Reflective Framework for Task-Adaptive Formation Choreography of CAVs.<br>
+                GRF-TAFC integrates context-grounded formation generation, optimization-based execution, and execution-driven reflection into a closed loop.
               </h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
@@ -383,7 +384,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Formation control of connected and automated vehicles (CAVs) has shown great potential for improving traffic efficiency and safety. However, existing studies predominantly focus on formation maintenance under predefined tasks and lack adaptability to dynamic task requirements in evolving traffic environments. To address this limitation, we propose GRM-TAFC, a Grounded and Reflective MLLM-based framework for Task-Adaptive Formation Control of CAVs. GRM-TAFC integrates a task-adaptive formation generator, a formation tracking controller, and a reflection module into a closed loop of generation, execution, and reflection. The generator leverages pretrained MLLMs to interpret unstructured multimodal task inputs in text, speech, and images and generate task-adaptive formations. Real-time tools and a knowledge database ground MLLM reasoning to mitigate hallucinations. The tracking controller realizes generated formations through conflict-free CAV-to-target assignment and joint spatio-temporal trajectory planning, enabling interpretable and safe execution through optimization-based methods. The reflection module reasons over task context and actual execution outcomes to update the knowledge database for iterative refinement of formation generation. Real-world experiments demonstrate the effectiveness and practical applicability of GRM-TAFC, with experimental videos available on the project website.
+            Formation control of connected and automated vehicles (CAVs) has shown great potential for improving traffic efficiency and safety. However, existing studies predominantly focus on formation maintenance under predefined tasks and lack adaptability to dynamic task requirements in evolving traffic environments. To address this limitation, we propose GRF-TAFC, a Grounded and Reflective Framework for Task-Adaptive Formation Choreography of CAVs. GRF-TAFC integrates context-grounded formation generation, optimization-based execution, and execution-driven reflection into a closed loop. The generator leverages pretrained MLLMs to interpret unstructured multimodal task inputs in text, speech, and images and generate task-adaptive formations. Real-time tools and a knowledge database ground MLLM reasoning to mitigate hallucinations. The tracking controller realizes generated formations through conflict-free CAV-to-target assignment and joint spatio-temporal trajectory planning, enabling interpretable and safe execution through optimization-based methods. The reflection module reasons over task context and actual execution outcomes to update the knowledge database for iterative refinement of formation generation. Real-world experiments demonstrate the effectiveness and practical applicability of GRF-TAFC, with experimental videos available on the project website.
           </p>
         </div>
       </div>
@@ -396,9 +397,9 @@
 <!-- <section class="hero is-small project-section" id="framework">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3 has-text-centered">GRM-TAFC Framework</h2>
+      <h2 class="title is-3 has-text-centered">GRF-TAFC Framework</h2>
       <div class="framework-figure">
-        <img src="static/images/GRM-TAFC-framework.png" alt="Overview of the GRM-TAFC framework" loading="lazy">
+        <img src="static/images/GRF-TAFC-framework.png" alt="Overview of the GRF-TAFC framework" loading="lazy">
       </div>
     </div>
   </div>
@@ -421,8 +422,8 @@
 </footer>
 
 <div class="has-text-centered">
-<!-- Default Statcounter code for GRM-TAFC
-https://dongjh20.github.io/GRM-TAFC/ -->
+<!-- Default Statcounter code for GRF-TAFC
+https://dongjh20.github.io/GRF-TAFC/ -->
 <script type="text/javascript">
 var sc_project=13352969;
 var sc_invisible=0;
